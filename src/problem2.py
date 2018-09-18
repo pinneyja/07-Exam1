@@ -448,7 +448,7 @@ def run_test_problem2c():
     print_summary_of_test_results(test_results)
 
 
-def problem1c(m):
+def problem1c(m, total=0):
     """
     What comes in:  An integer  m  that is at least 2.
     What goes out:
@@ -480,10 +480,9 @@ def problem1c(m):
     # DONE (continued)    You get   NO credit   if your solution is more
     # DONE (continued)    than 3 lines of code (and it can be done in 1 line).
     ############################################################################
-    total = 0
+
     for k in range(m + 1, m + 10):
-        if number_of_factors(k) == 2:
-            total = total + k
+        if number_of_factors(k) == 2: total = total + k
     return total
 
 
