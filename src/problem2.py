@@ -483,7 +483,7 @@ def problem1c(m, total=0):
 
     for k in range(m + 1, m + 10):
         if number_of_factors(k) == 2: total = total + k
-    return total
+    return total  # This solution is technically only 3 additional lines. It's worth a try.
 
 
 ################################################################################
